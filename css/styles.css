@@ -191,6 +191,7 @@ section {
   margin: 0 0 16px;
   color: var(--muted);
   font-weight: 600;
+  margin-top: 0;
 }
 /* grid style for the 'about me and quick info' sections  */
 .about-grid {
@@ -361,6 +362,9 @@ input, textarea {
 input:focus, textarea:focus {
   border-color: color-mix(in srgb, var(--primary) 55%, var(--border));
   box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+input.error, textarea.error {
+  border-color: #a62828;
 }
 /* style the status message after sending it */
 .form-status {
