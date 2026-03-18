@@ -1,0 +1,164 @@
+# Technical Documentation 
+
+Here, I documented all my work in this assignment:
+* [1. Technologies Used](#1-technologies-used)
+* [2. Folder Structure](#2-folder-structure)
+* [3. Website Structure](#3-website-structure)
+* [4. Image Handling](#4-image-handling)
+* [5. JavaScript Functionality](#5-javascript-functionality)
+* [6. Accessibility Features](#6-accessibility-features)
+* [7. Performance Optimization](#7-performance-optimization)
+* [8. Testing and Validation](#8-testing-and-validation)
+* [9. GitHub Control](#9-github-control)
+
+
+
+## 1. Technologies Used
+
+### 1.1 HTML
+HTML is used to structure the website content such as sections, headings, paragraphs, images, and form elements. Main elements used:
+- sections, headers, paragraphs, links
+- images and image containers
+- anchor links for navigation
+
+### 1.2 CSS3
+CSS is mainly for visualizing the appearance and layout of the website. Main elements used:
+- Flexbox for vertical and horizontal alignment
+- CSS Grid for project layout
+- Box shadows, borders, background, and gradients for design
+- Explore color shades
+
+### 1.3 JavaScript
+JavaScript is used for interactivity and dynamic functionalities. Main elements used:
+- Theme switching (light/dark mode)
+- Contact form feedback (layout only)
+
+
+## 2. Folder Structure
+
+The project follows a clear and organized folder structure:
+
+assignment-1/  
+├── assets/images
+│ ├── image_placeholder.png
+│ ├── project1.png
+│ ├── project2.png
+│ └── project3.png
+├── css/  
+│ └── styles.css  
+├── docs/  
+│ ├── ai-usage-report.md  
+│ └── technical-documentation.md  
+├── js/  
+│ └── script.js  
+├── index.html  
+├── README.md  
+└── .gitignore
+
+purpose of each folder:
+| File Name | Usage |
+|----|----|
+| `index.html` | Main page (where the program should run in) |
+| `css/styles.css` | For page styling |
+| `js/script.js` | For functionality |
+| `assets/images/` | Project images |
+| `docs/ai-usage-report.md` | A detailed AI usage report |
+| `docs/technical-documentation.md` | Technical documentation |
+
+
+## 3. Portfolio Structure
+
+The website is divided into main sections:
+
+### 3.1 Navigation Bar
+- Placed at the top of the page
+- Contains links to major sections (About me, Projects, Skills, Contact Form)
+- Includes theme toggle button (Dark/light mode)
+- Uses anchor links for navigation
+
+### 3.2 About Me Section
+- Introduction, personal summary, and quick basic information about my university
+- Message button to jump to the contact form section
+
+### 3.3 Projects Section
+- Displaying 3 academic projects:
+	- Salary Prediction Classification
+	- Peruke Game
+	- Crime Forecasting in Los Angeles
+- Each project card contains:
+  - Title
+  - Description
+  - Image preview
+
+### 3.4 Skills Section
+- Organized into 2 categories: Professional and Programming skills
+- Using chip-style elements
+
+### 3.5 Contact Section
+- Fields used: Name, Email, Message
+- 'No backend connection'
+
+
+
+## 4. Image Handling
+
+Images are stored in the `assets/images/` directory and are displayed using the relative path:
+`<img  src="assets/images/project2.png"  alt="Project description">` 
+Each`.img-box` container ensures:
+-   Fixed aspect ratio
+-   Proper alignment
+-   Consistent image sizing
+ 
+ 
+## 5. JavaScript Functionality
+
+### 5.1 Theme Toggle
+-   Switches between light and dark themes
+-   Saves preference using `localStorage` 
+
+### 5.2 Contact Form Feedback
+-   Prevents default form submission
+-   Resets form fields
+-   No backend processing
+
+## 6. Accessibility Features
+
+The website includes basic accessibility features (CSS Style mostly):
+-   Alt text for all images
+-   Proper form labels
+-   High/low contrast in dark/light modes
+-   Keyboard-accessible navigation
+   
+## 7. Performance Optimization
+
+Several techniques were used to improve the overall performance and layout:
+-   Optimized image sizes in each image container    
+-   Minimal JavaScript usage (for now)
+-   Avoidance of unnecessary animations
+
+
+
+## 8. Testing and Validation
+
+The website was tested using:
+- Browser Testing
+	- Google Chrome
+	- Microsoft Edge
+- Device Testing
+	- Desktop
+	- Mobile simulation 
+- Functional Testing
+	- Navigation links
+	- Theme toggle
+	- Form submission
+	-  Image loading
+    
+
+## 9. GitHub Control
+
+VS Code, Git, and GitHub were used for version control.
+- Regular commits
+- Descriptive commit messages
+- Separate commits for major features
+- Online backup through GitHub
+ 
