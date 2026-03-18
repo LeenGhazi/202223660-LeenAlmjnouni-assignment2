@@ -11,6 +11,11 @@ Here, I documented all my work in this assignment:
 * [8. Testing and Validation](#8-testing-and-validation)
 * [9. GitHub Control](#9-github-control)
 
+Note: the following features are added to what has been built in assignment 1.
+1. Dynamic Content: First, greet the user by their name and based on the time of the day. Second, switch between sections using the button on the navigation bar placed at the top of the website.
+2. Data Handling:Using localStorage to save user name and their theme preferences.
+3. Animation and Transitions: Button hover and shadow effects.
+4. Error Handling:Validate user input and send messaeg if the input is empty/invalid.
 
 
 ## 1. Technologies Used
@@ -27,17 +32,24 @@ CSS is mainly for visualizing the appearance and layout of the website. Main ele
 - CSS Grid for project layout
 - Box shadows, borders, background, and gradients for design
 - Explore color shades
+- Use Hover style and position transformation for buttons.
+- Apply blur style.
+- Disable buttons on the navigation bar before asking the user for their name.
+- Use colors in Contact Form to communicate with the user.
 
 ### 1.3 JavaScript
 JavaScript is used for interactivity and dynamic functionalities. Main elements used:
 - Theme switching (light/dark mode)
 - Contact form feedback (layout only)
+- Use localStorage for saving Theme preferences and saving user name.
+- Use Popup page to ask the user for their name and greet them.
 
 
 ## 2. Folder Structure
 
 The project follows a clear and organized folder structure:
 
+```
 assignment-1/  
 ├── assets/images
 │ ├── image_placeholder.png
@@ -54,6 +66,7 @@ assignment-1/
 ├── index.html  
 ├── README.md  
 └── .gitignore
+```
 
 purpose of each folder:
 | File Name | Usage |
@@ -70,17 +83,20 @@ purpose of each folder:
 
 The website is divided into main sections:
 
-### 3.1 Navigation Bar
+### 3.1 Greeting Feature
+- Pop-up page that asks teh user for their name and greet them based on the time of the day
+
+### 3.2 Navigation Bar
 - Placed at the top of the page
 - Contains links to major sections (About me, Projects, Skills, Contact Form)
 - Includes theme toggle button (Dark/light mode)
 - Uses anchor links for navigation
 
-### 3.2 About Me Section
+### 3.3 About Me Section
 - Introduction, personal summary, and quick basic information about my university
 - Message button to jump to the contact form section
 
-### 3.3 Projects Section
+### 3.4 Projects Section
 - Displaying 3 academic projects:
 	- Salary Prediction Classification
 	- Peruke Game
@@ -90,14 +106,13 @@ The website is divided into main sections:
   - Description
   - Image preview
 
-### 3.4 Skills Section
+### 3.5 Skills Section
 - Organized into 2 categories: Professional and Programming skills
 - Using chip-style elements
 
-### 3.5 Contact Section
+### 3.6 Contact Section
 - Fields used: Name, Email, Message
 - 'No backend connection'
-
 
 
 ## 4. Image Handling
@@ -120,6 +135,8 @@ Each`.img-box` container ensures:
 -   Prevents default form submission
 -   Resets form fields
 -   No backend processing
+-	Validate user input when empty/incorrect input is submitted.
+
 
 ## 6. Accessibility Features
 
@@ -128,14 +145,15 @@ The website includes basic accessibility features (CSS Style mostly):
 -   Proper form labels
 -   High/low contrast in dark/light modes
 -   Keyboard-accessible navigation
-   
+-	All styles are saved in styles.css and inline-style is avoided.
+
+
 ## 7. Performance Optimization
 
 Several techniques were used to improve the overall performance and layout:
 -   Optimized image sizes in each image container    
 -   Minimal JavaScript usage (for now)
 -   Avoidance of unnecessary animations
-
 
 
 ## 8. Testing and Validation
@@ -152,7 +170,7 @@ The website was tested using:
 	- Theme toggle
 	- Form submission
 	-  Image loading
-    
+
 
 ## 9. GitHub Control
 
