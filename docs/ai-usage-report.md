@@ -20,6 +20,7 @@ All AI tools mentioned above were used as a support systems. All code was manual
 ## Benefits & Challenges
 
 **Benefits**
+
 AI tools significantly improved my work in:
 - Initializing a draft of the assignment structure (e.g., sections, folder layout).
 - Understanding the assignments requirement and check if all the required features are included.
@@ -34,6 +35,7 @@ AI tools significantly improved my work in:
 A few challenges I faced during my AI-usage in this assignment:
 - Manual code testing when it comes to visualize specific styles.
 - Matching modified classes in HTML and CSS codes.
+- Switching between the CSS style file and in-line style code.
 - Focusing on the optional features and page styling rather than the required one.
 - Code originality and verification with the academic integrity guidelines.
 
@@ -43,7 +45,8 @@ Working on this assignments taught me the following:
 - Structuring a personal website from the scratch.
 - Applying Grid style for devices adaptability.
 - Understanding the difference between HTML, CSS, and JS as each one is responsible  for structuring, styling, and functionality respectively.
-- Visualizing difference styles and rules override especially in changing the page theme.
+- Using localStorage correctly in saving the Theme and user name entered before.
+- Visualizing difference styles and rules override especially in changing the page theme and button styles.
 - Verifying AI generating codes and analyse the result instead of copying the entire code.
 
 ## Responsible Use & Modifications
