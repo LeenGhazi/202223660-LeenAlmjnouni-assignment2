@@ -59,3 +59,57 @@ form.addEventListener("submit", (e) => {
   }, 600);
 });
 
+
+/* =========================
+   POPUP GREETING 
+========================= */
+// loading the name saved in the local storage and showing the greeting if the name is found, 
+// otherwise show the popup to ask for the name
+window.onload = function () {
+  const savedName = localStorage.getItem("username");
+  document.body.classList.add("overlay-active");
+  const input = document.getElementById("popup-name");
+  const button = document.querySelector(".popup-box button");
+  if (savedName) {
+    input.style.display = "none";
+    button.style.display = "none";
+    showGreetingOnly(savedName);
+  }
+};
+// show a greeting message based on the time of the day + the name of the user saved already in the local storage
+function getGreeting(name) {
+  const hour = new Date().getHours();
+  let message = "";
+  if (hour < 12) message = "Good morning";
+  else if (hour < 18) message = "Good afternoon";
+  else message = "Good evening";
+  return `${message}, ${name} 👋`;
+}
+// fetch the username from the localStorage + show the greeting message + hide the popup box after 2.5 seconds
+function handleName() {
+  const input = document.getElementById("popup-name").value;
+  const text = document.getElementById("popup-text");
+  if (input === "") {
+    text.textContent = "❌ Please enter your name";
+    return;
+  }
+  localStorage.setItem("username", input);
+  text.textContent = getGreeting(input);
+  document.getElementById("popup-name").style.display = "none";
+  document.querySelector(".popup-box button").style.display = "none";
+  setTimeout(() => {
+    document.getElementById("overlay").classList.add("hidden");
+    document.body.classList.remove("overlay-active"); 
+}, 2500);
+}
+// this function is similar to the one above, but only used if the name is already saved in the local storage
+function showGreetingOnly(name) {
+  const text = document.getElementById("popup-text");
+  text.textContent = getGreeting(name);
+  document.getElementById("popup-name").style.display = "none";
+  document.querySelector(".popup-box button").style.display = "none";
+  setTimeout(() => {
+    document.getElementById("overlay").classList.add("hidden");
+    document.body.classList.remove("overlay-active"); 
+}, 2500);
+}

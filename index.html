@@ -168,6 +168,18 @@
       </div>
     </div>
   </section>
+  
+  <!-- blur the page before name input in the pop-up page -->
+  <div id="overlay">
+  <div class="popup-box">
+    <!-- ask user for name -->
+    <h2 id="popup-text">Welcome to Leen's Portfolio <br> Please enter your name</h2>
+    <input type="text" id="popup-name" placeholder="Your name">
+    <!-- submit user name and save it in the local storage -->
+    <button class="btn primary" onclick="handleName()">Submit</button>
+  </div>
+</div>
+
 </body>
 </html>
 

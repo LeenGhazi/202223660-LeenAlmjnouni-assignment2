@@ -363,3 +363,69 @@ input:focus, textarea:focus {
   70%  { outline-color: color-mix(in srgb, var(--accent) 20%, transparent); }
   100% { outline-color: transparent; }
 }
+
+/* =========================
+   POP-UP STYLE
+========================= */
+/* Overlay (blur background) */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(8px);
+  background: color-mix(in srgb, var(--bg) 70%, transparent);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  pointer-events: all;
+  transition: 0.5s;
+}
+body.overlay-active {
+  overflow: hidden; /* prevents scrolling */
+}
+body.overlay-active *:not(#overlay):not(#overlay *) {
+  pointer-events: none;
+}
+
+/* Smooth fade */
+#overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Popup box */
+.popup-box {
+  background: var(--surface);
+  color: var(--text);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 400px;   /* increase width */
+  max-width: 90%; /* keeps it responsive on small screens */
+}
+
+/* Popup input */
+.popup-box input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
