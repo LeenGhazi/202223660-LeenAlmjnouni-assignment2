@@ -1,4 +1,4 @@
-# Assignment 1 – Personal Portfolio 
+# Assignment 2 – Personal Portfolio 
 
 Here is a simple personal portfolio website I have built using HTML, CSS, and JavaScript.
 
